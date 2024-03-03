@@ -1,0 +1,55 @@
+.sign-up {
+  border: 2px solid var(--text-primary);
+  border-radius: 0.2rem;
+  padding: 2rem;
+
+  background-color: rgba(255, 255, 255, 0.09);
+  color: var(--text-primary);
+}
+
+.sign-up h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sign-up div label {
+  display: block;
+}
+
+.sign-up div input {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  padding-inline: 0.5rem;
+}
+
+.sign-up .phones #ddd {
+  width: 10%;
+  text-align: center;
+}
+
+.sign-up .phones #phone {
+  width: 90%;
+}
+
+.sign-up button {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: var(--bg-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: none;
+  color: var(--text-primary);
+  transition: all 0.2s linear;
+}
+
+.sign-up button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
