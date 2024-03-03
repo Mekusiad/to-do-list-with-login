@@ -20,6 +20,10 @@ const Home = () => {
     setTitle,
     description,
     setDescription,
+    showEditInput,
+    setShowEditInput,
+    setTitleEdit,
+    setDescriptionEdit,
   } = useContext(DataBaseContext);
 
   const navigate = useNavigate();
@@ -45,6 +49,10 @@ const Home = () => {
   const handleAddTask = async () => {
     if (title === "" || description === "") return;
     const data = { title, description };
+
+    setShowEditInput(!showEditInput);
+    setTitleEdit("");
+    setDescriptionEdit("");
 
     await dataUserTasks.saveUserTask(data);
     getTaskUser();

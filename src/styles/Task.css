@@ -51,6 +51,7 @@
   outline: none;
   height: 2rem;
   padding-inline: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .container-task .container-right button svg {

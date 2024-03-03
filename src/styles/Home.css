@@ -48,3 +48,8 @@
 .opacity {
   opacity: 0.5;
 }
+
+.green {
+  color: green;
+  font-weight: bold;
+}

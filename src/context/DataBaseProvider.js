@@ -9,6 +9,8 @@ const DataBaseContextProvider = ({ children }) => {
   const [description, setDescription] = useState(undefined);
   const [showEditInput, setShowEditInput] = useState(false);
   const [modifyOutput, setModifyOutput] = useState(false);
+  const [titleEdit, setTitleEdit] = useState("");
+  const [descriptionEdit, setDescriptionEdit] = useState("");
 
   const context = {
     modifyOutput,
@@ -23,6 +25,10 @@ const DataBaseContextProvider = ({ children }) => {
     setDescription,
     showEditInput,
     setShowEditInput,
+    titleEdit,
+    setTitleEdit,
+    descriptionEdit,
+    setDescriptionEdit,
   };
 
   return (

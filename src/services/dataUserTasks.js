@@ -50,8 +50,9 @@ export const dataUserTasks = {
   },
 
   async updateUserTask(idTask, data) {
+    console.log(data);
     const user = await authService.getLoggedUser();
-    const URL = `http://localhost:3001/updateUserTask/${user.id}/${idTask}`;
+    const URL = `http://localhost:3001/updatedUserTask/${user.id}/${idTask}`;
 
     try {
       const result = await axios({
